@@ -15,4 +15,4 @@ mongoose.connect(process.env.MONGO_URI)
 app.use("/", urlRoutes);
 
 const PORT = 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); 

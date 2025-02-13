@@ -1,0 +1,38 @@
+services:
+  frontend:
+    build: ./Frontend
+    container_name: url-frontend
+    ports:
+      - "5173:80" 
+    depends_on:
+      - backend
+    networks:
+      - url-network
+
+  backend:
+    build: ./Backend
+    container_name: url-backend
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/url_shortener
+    depends_on:
+      - mongo
+    networks:
+      - url-network
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    networks:
+      - url-network
+    volumes:
+      - mongo-data:/data/db
+
+networks:
+  url-network:
+
+volumes:
+  mongo-data:

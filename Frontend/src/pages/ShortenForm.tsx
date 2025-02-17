@@ -88,7 +88,7 @@ const ShortenForm = () => {
 
               <button
                 type="submit"
-                className="w-full px-4 py-2 lg:px-6 lg:py-3 bg-green-400/10 border-2 border-green-400/40 rounded-lg font-mono font-bold text-green-400 hover:bg-green-400/20 hover:border-green-400/60 hover:text-green-300 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full px-4 py-2 lg:px-6 lg:py-3 bg-green-400/10 border-2 border-green-400/40 rounded-lg font-mono font-bold text-green-400 hover:bg-green-400/20 hover:border-green-400/60 hover:text-green-300 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span className="text-green-400">⫫⫫⫫</span>
                 GENERATE SHORTLINK
@@ -125,7 +125,7 @@ const ShortenForm = () => {
 
               <div className="space-y-4">
                 <CopyToClipboard text={shortUrl}>
-                  <button className="w-full px-6 py-3 bg-green-400/10 border-2 border-green-400/40 rounded-lg font-mono text-green-400 hover:bg-green-400/20 hover:border-green-400/60 transition-all duration-300">
+                  <button className="w-full px-6 py-3 bg-green-400/10 border-2 border-green-400/40 rounded-lg font-mono text-green-400 hover:bg-green-400/20 hover:border-green-400/60 transition-all duration-300 cursor-copy">
                     COPY:CLIPBOARD.exe
                   </button>
                 </CopyToClipboard>

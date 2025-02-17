@@ -64,7 +64,7 @@ const History: React.FC<HistoryProps> = ({ shortUrl }) => {
                       <CopyToClipboard text={item.longUrl}>
                         <button
                           onClick={() => toast.success("copied to clipboard")}
-                          className="px-3 py-1.5 bg-green-400/10 border border-green-400/30 rounded-lg font-mono text-green-400 hover:bg-green-400/20 hover:border-green-400/50 transition-all duration-200"
+                          className="px-3 py-1.5 bg-green-400/10 border cursor-copy border-green-400/30 rounded-lg font-mono text-green-400 hover:bg-green-400/20 hover:border-green-400/50 transition-all duration-200"
                         >
                           COPY
                         </button>
@@ -88,7 +88,7 @@ const History: React.FC<HistoryProps> = ({ shortUrl }) => {
                       <CopyToClipboard text={`${BASE_URL}/${item.shortCode}`}>
                         <button
                           onClick={() => toast.success("copied to clipboard")}
-                          className="px-3 py-1.5 bg-green-400/10 border border-green-400/30 rounded-lg font-mono text-green-400 hover:bg-green-400/20 hover:border-green-400/50 transition-all duration-200"
+                          className="px-3 py-1.5 bg-green-400/10 border border-green-400/30 rounded-lg font-mono text-green-400 hover:bg-green-400/20 hover:border-green-400/50 transition-all duration-200 cursor-copy"
                         >
                           COPY
                         </button>

@@ -238,7 +238,7 @@ const RegisterModal = ({
         )}
 
         <button
-          className="w-full px-6 py-3 bg-green-400/10 border-2 border-green-400/40 rounded-lg font-mono font-bold text-green-400 hover:bg-green-400/20 hover:border-green-400/60 hover:text-green-300 transition-all duration-300 flex items-center justify-center gap-2 mt-6"
+          className="w-full px-6 py-3 bg-green-400/10 border-2 border-green-400/40 rounded-lg font-mono font-bold text-green-400 hover:bg-green-400/20 hover:border-green-400/60 hover:text-green-300  cursor-pointer transition-all duration-300 flex items-center justify-center gap-2 mt-6"
           onClick={handleSubmit}
         >
           <span className="text-green-400">⫫⫫⫫</span>
